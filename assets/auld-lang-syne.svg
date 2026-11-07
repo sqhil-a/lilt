@@ -12,6 +12,6 @@
     <use href="#arc" y="56"/><use href="#arc" y="70"/><use href="#arc" y="84"/><use href="#arc" y="98"/>
     <use href="#arc" y="112"/><use href="#arc" y="126"/><use href="#arc" y="140"/>
   </g>
-  <text x="22" y="38" fill="#dce1ff" font-size="15" font-family="monospace" letter-spacing="3">BLUE HOUR</text>
-  <text x="22" y="376" fill="#a8b2eb" font-size="12" font-family="monospace" letter-spacing="2">LILT / DEMO 01</text>
+  <text x="22" y="38" fill="#dce1ff" font-size="15" font-family="monospace" letter-spacing="3">AULD LANG SYNE</text>
+  <text x="22" y="376" fill="#a8b2eb" font-size="12" font-family="monospace" letter-spacing="2">SCOTTISH TRADITIONAL</text>
 </svg>
