@@ -13,3 +13,5 @@ In the GitHub repository, choose **Settings → Pages → Deploy from a branch**
 | Privacy Policy URL | https://sqhil-a.github.io/lilt/privacy/ |
 
 Review the policy when the app’s data practices change. Add a link to the published privacy policy inside the macOS app before submitting for review.
+
+Keep the legacy `assets/site.css` and `assets/scene.js` paths available for browsers with cached homepage HTML.
