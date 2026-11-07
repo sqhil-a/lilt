@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#1d265d"/><stop offset="1" stop-color="#080e24"/></linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0v28" fill="none" stroke="#e0e6ff" stroke-opacity=".12"/></pattern>
+    <path id="arc" d="M-50 245C50 219 81 136 170 139c85 3 93 89 172 83 39-3 78-27 115-65"/>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h400v400H0z"/>
+  <path fill="url(#grid)" d="M0 0h400v400H0z"/>
+  <circle cx="260" cy="142" r="65" fill="#a8b2eb"/>
+  <g fill="none" stroke="#8f9ce4" stroke-width="2">
+    <use href="#arc" y="0"/><use href="#arc" y="14"/><use href="#arc" y="28"/><use href="#arc" y="42"/>
+    <use href="#arc" y="56"/><use href="#arc" y="70"/><use href="#arc" y="84"/><use href="#arc" y="98"/>
+    <use href="#arc" y="112"/><use href="#arc" y="126"/><use href="#arc" y="140"/>
+  </g>
+  <text x="22" y="38" fill="#dce1ff" font-size="15" font-family="monospace" letter-spacing="3">BLUE HOUR</text>
+  <text x="22" y="376" fill="#a8b2eb" font-size="12" font-family="monospace" letter-spacing="2">LILT / DEMO 01</text>
+</svg>

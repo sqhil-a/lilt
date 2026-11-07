@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Lilt handles playback information, lyric lookups, and support requests.">
+  <meta name="theme-color" content="#212121">
+  <title>Privacy policy — Lilt</title>
+  <link rel="icon" href="../assets/lilt.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="../" aria-label="Lilt home"><img src="../assets/lilt.png" alt="Lilt" width="52" height="34"></a>
+    <nav aria-label="Main navigation"><a href="../support/">Support</a><a href="../privacy/" aria-current="page">Privacy</a></nav>
+  </header>
+  <main id="main" class="wrap">
+    <div class="article-head">
+      <p class="eyebrow">Effective November 7, 2026</p>
+      <h1 class="article-title">Privacy policy</h1>
+      <p class="lede">How Lilt handles playback information, lyric lookups, and support requests.</p>
+    </div>
+    <div class="article-grid">
+      <nav class="contents" aria-label="On this page"><p class="eyebrow">On this page</p><ul><li><a href="#overview">Who operates Lilt</a></li><li><a href="#playback">Playback on your Mac</a></li><li><a href="#requests">Lyrics and artwork requests</a></li><li><a href="#storage">Local data and removal</a></li><li><a href="#choices">Your choices</a></li><li><a href="#site">Website and support</a></li></ul></nav>
+      <div class="prose">
+        <section id="overview"><h2>Who operates Lilt</h2>
+<p>Sahil Ambegaonkar operates Lilt, a macOS menu bar app, and this website. Lilt works without an account and includes no advertising, analytics, or crash-reporting SDK.</p>
+        </section>
+        <section id="playback"><h2>Playback on your Mac</h2>
+<p>With your macOS Automation permission, Lilt reads the current track title, artist, album, artwork, duration, playback state, and position from Spotify or Apple Music. It uses this information to show the artwork and keep lyrics in sync. Lilt never asks for your Spotify or Apple Music password.</p>
+        </section>
+        <section id="requests"><h2>Lyrics and artwork requests</h2>
+<p>To find synchronized lyrics, Lilt sends the track title and artist to LRCLIB, along with the album and duration when available for a match. Requests also identify the app and version. Playback position and imported lyric files stay on your Mac. <a href="https://lrclib.net/docs.txt">LRCLIB API documentation</a></p>
+<p>When Spotify supplies an HTTPS artwork URL, Lilt fetches the cover from that URL. LRCLIB and the artwork host receive the request and standard connection information, including your IP address. Each service handles its own requests under its own practices.</p>
+        </section>
+        <section id="storage"><h2>Local data and removal</h2>
+<p>Lilt stores your settings, downloaded lyric results, and copies of imported LRC files on your Mac. Cached matches are reused for up to 30 days and missed lookups for up to six hours. The app keeps at most 250 lookup entries. Those reuse periods do not automatically erase the cache. Imported files stay until you remove them.</p>
+<p>To clear downloaded results or imported copies, quit Lilt and remove the relevant data under <code>~/Library/Caches/Lilt/</code> or <code>~/Library/Application Support/Lilt/Imported Lyrics/</code>. For a sandboxed build, these folders may be inside Lilt’s app container.</p>
+        </section>
+        <section id="choices"><h2>Your choices</h2>
+<p>To stop Lilt from reading playback or making new playback-related requests, quit it from the menu bar. You can revoke player access in <strong>System Settings → Privacy &amp; Security → Automation → Lilt</strong>.</p>
+        </section>
+        <section id="site"><h2>Website and support</h2>
+<p>This website uses static pages with no tracking scripts, analytics, or cookies set by Lilt. GitHub Pages hosts the site and may process connection and request data to serve it. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a></p>
+<p>If you email <a class="contact-address" href="mailto:liltwallpapers@gmail.com">liltwallpapers@gmail.com</a>, Sahil receives your email address, message, and any attachments you choose to send. The information is used to reply and resolve your request. Support correspondence is kept as needed for those purposes and handled through Gmail. For privacy questions or to request access, correction, or deletion of support correspondence, use the same address. <a href="https://policies.google.com/privacy">Google’s privacy policy</a></p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <p>Lilt <span>by Sahil Ambegaonkar</span></p>
+    <nav aria-label="Footer navigation"><a href="../support/">Support</a><a href="../privacy/">Privacy policy</a></nav>
+  </footer>
+</body>
+</html>
