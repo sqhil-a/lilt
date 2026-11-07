@@ -1,6 +1,7 @@
 (() => {
   const stage = document.querySelector(".sculpture");
-  const canvas = stage.querySelector("canvas");
+  const canvas = stage?.querySelector("canvas");
+  if (!canvas || getComputedStyle(canvas).position !== "absolute") return;
   const context = canvas.getContext("2d");
   if (!context) return;
 
@@ -37,11 +38,15 @@
 
   function resize() {
     const rect = stage.getBoundingClientRect();
-    const ratio = Math.min(devicePixelRatio || 1, 1.75);
+    if (!rect.width || !rect.height) return;
+    // Keep the backing buffer bounded and independent of the canvas's layout size.
+    const ratio = Math.min(devicePixelRatio || 1, 1.75, 1536 / Math.max(rect.width, rect.height));
+    const bufferWidth = Math.max(1, Math.round(rect.width * ratio));
+    const bufferHeight = Math.max(1, Math.round(rect.height * ratio));
     width = rect.width;
     height = rect.height;
-    canvas.width = Math.round(width * ratio);
-    canvas.height = Math.round(height * ratio);
+    if (canvas.width !== bufferWidth) canvas.width = bufferWidth;
+    if (canvas.height !== bufferHeight) canvas.height = bufferHeight;
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
     previousScroll = NaN;
     schedule();
@@ -106,6 +111,7 @@
       context.fill();
       context.stroke();
     }
+    canvas.hidden = false;
     stage.classList.add("is-rendered");
   }
 
@@ -113,7 +119,9 @@
     if (!frame) frame = requestAnimationFrame(draw);
   }
 
-  new ResizeObserver(resize).observe(stage);
+  resize();
+  if ("ResizeObserver" in window) new ResizeObserver(resize).observe(stage);
+  else addEventListener("resize", resize);
   addEventListener("scroll", schedule, { passive: true });
   reducedMotion.addEventListener("change", () => {
     previousScroll = NaN;
