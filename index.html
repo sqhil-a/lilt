@@ -3,99 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lilt brings synchronized lyrics and album colours to your Mac desktop. Works with Spotify and Apple Music.">
-  <meta name="theme-color" content="#212121">
+  <meta name="description" content="Lilt puts synced lyrics and album colours on your Mac desktop. Works with Spotify and Apple Music.">
+  <meta name="theme-color" content="#0c0d10">
   <title>Lilt — Lyrics on your desktop</title>
   <link rel="icon" href="assets/lilt.png">
   <link rel="stylesheet" href="assets/site.css">
-  <script defer src="assets/demo.js"></script>
+  <script defer src="assets/scene.js"></script>
 </head>
-<body class="home">
+<body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="nav-shell">
-    <header class="site-header wrap">
-      <a class="wordmark" href="./" aria-label="Lilt home"><img src="assets/lilt.png" alt="Lilt" width="52" height="34"></a>
-      <nav aria-label="Main navigation"><a href="#demo">Demo</a><a href="#how-it-works">How it works</a><a class="nav-support" href="support/">Support <span aria-hidden="true">↗</span></a></nav>
-    </header>
-  </div>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./" aria-label="Lilt home"><img src="assets/lilt.png" alt="Lilt" width="48" height="31"></a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="support/">Support <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-  <main id="main" class="wrap">
-    <section class="hero" aria-labelledby="headline">
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="headline">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="signal" aria-hidden="true"></span> A menu bar app for macOS</p>
-        <h1 id="headline">Lyrics on your<br> desktop<span>.</span></h1>
+        <p class="platform"><span></span> macOS 15+</p>
+        <h1 id="headline">Lyrics belong<br> on the <em>desktop.</em></h1>
+        <p class="lede">A Mac app that puts synchronized lyrics and album colour behind your windows. Play a song in Spotify or Apple Music and Lilt follows along.</p>
+        <a class="hero-link" href="#features">Explore Lilt <span aria-hidden="true">↓</span></a>
       </div>
-      <div class="hero-aside">
-        <p class="lede">Play a song in Spotify or Apple Music. Lilt brings the words and colours of the album to the space behind your windows.</p>
-        <a class="text-link" href="#demo">Try the desktop demo <span aria-hidden="true">↓</span></a>
-      </div>
-    </section>
-
-    <section class="demo" id="demo" aria-labelledby="demo-title">
-      <div class="demo-heading">
-        <div><p class="eyebrow">01 / Interactive preview</p><h2 id="demo-title">The desktop, in sync.</h2></div>
-        <div class="mode-switch" role="group" aria-label="Desktop mode" hidden>
-          <button type="button" data-mode="immersive" aria-pressed="true">Immersive</button>
-          <button type="button" data-mode="lyrics" aria-pressed="false">Lyrics Only</button>
-          <button type="button" data-mode="ambient" aria-pressed="false">Ambient Colour</button>
-        </div>
-      </div>
-
-      <div class="scene" data-mode="immersive" aria-hidden="true">
-        <div class="scene-colour"></div>
-        <div class="scene-bar"><span>Finder</span><span class="scene-status">♪ <span>9:41</span></span></div>
-        <div class="scene-content">
-          <div class="record">
-            <img src="assets/auld-lang-syne.svg" alt="" width="400" height="400">
-            <strong>Auld Lang Syne</strong>
-            <span>Traditional Scottish song</span>
-          </div>
-          <div class="lyric-window">
-            <div class="lines">
-              <span class="is-current">Should auld acquaintance be forgot,</span>
-              <span>And never brought to mind?</span>
-              <span>Should auld acquaintance be forgot,</span>
-              <span>And days of auld lang syne?</span>
-              <span>For auld lang syne, my dear,</span>
-              <span>For auld lang syne,</span>
-              <span>We’ll tak a cup o’ kindness yet,</span>
-              <span>For auld lang syne.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="transport">
-        <div class="track-meta"><span class="eyebrow">Now playing</span><strong>Auld Lang Syne</strong></div>
-        <audio controls preload="metadata" src="assets/auld-lang-syne.m4a"></audio>
-        <div class="player-controls" hidden>
-          <button type="button" class="play" aria-label="Play demo"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="play-icon" d="M8 5v14l11-7z"/><path class="pause-icon" d="M7 5h3v14H7zm7 0h3v14h-3z"/></svg></button>
-          <time class="elapsed">0:00</time>
-          <input class="seek" type="range" aria-label="Playback position" min="0" max="48" step=".1" value="0">
-          <time class="duration">0:48</time>
-        </div>
-        <p class="playback-error" role="status" hidden></p>
-      </div>
-      <p class="demo-note">Instrumental arrangement for this demo. Words by Robert Burns. <a href="https://blogs.loc.gov/music/2018/12/auld-lang-syne-sharing-a-cup-of-kindness-with-old-friends/">About the song ↗</a></p>
-    </section>
-
-    <section class="details" id="how-it-works" aria-labelledby="details-title">
-      <div class="details-intro">
-        <p class="eyebrow">02 / On your Mac</p>
-        <h2 id="details-title">A little more room for the music.</h2>
-        <p class="compatibility">macOS 15 or later <span>·</span> Spotify and Apple Music</p>
-      </div>
-      <div class="feature-list">
-        <div class="feature"><span aria-hidden="true">01</span><div><h3>Follow the words</h3><p>When timed lyrics are available, each line rises into focus as the song plays. You can adjust the timing or import an LRC file.</p></div></div>
-        <div class="feature"><span aria-hidden="true">02</span><div><h3>Make the scene yours</h3><p>Fill the desktop with album colours, float lyrics over your wallpaper, or keep just the ambient glow.</p></div></div>
-        <div class="feature"><span aria-hidden="true">03</span><div><h3>Back to your wallpaper</h3><p>Pause the music or press <kbd>⌃⌥L</kbd> to hide the scene. Lilt lives in the menu bar, behind your regular windows.</p></div></div>
+      <div class="sculpture" aria-hidden="true">
+        <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
+        <div class="fallback-form"></div>
+        <canvas></canvas>
       </div>
     </section>
 
-    <aside class="handoff" aria-label="Lilt support">
-      <div><p class="eyebrow">03 / Help</p><h2>Get Lilt in tune.</h2></div>
-      <a class="text-link" href="support/">Setup and troubleshooting <span aria-hidden="true">↗</span></a>
-    </aside>
+    <section id="features" class="features wrap" aria-labelledby="features-title">
+      <div class="feature-copy">
+        <h2 id="features-title">Your music.<br>Your workspace.</h2>
+        <p>Follow the current line, keep the album’s colours, or float lyrics over your own wallpaper. Pick the scene that fits the way you use your Mac.</p>
+        <dl class="feature-list">
+          <div><dt>Immersive</dt><dd>Lyrics and artwork on an album-tinted desktop.</dd></div>
+          <div><dt>Lyrics Only</dt><dd>Timed words over your existing wallpaper.</dd></div>
+          <div><dt>Ambient Colour</dt><dd>The album palette, with an optional slow drift.</dd></div>
+        </dl>
+      </div>
+      <div class="layers" aria-hidden="true">
+        <div class="layer layer-back"></div>
+        <div class="layer layer-middle"><div class="layer-art"></div></div>
+        <div class="layer layer-front">
+          <div class="layer-lines"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="setup wrap" aria-labelledby="setup-title">
+      <div><h2 id="setup-title">One note in your menu bar.</h2><p>Open Lilt to change the scene, adjust lyric timing, or import an LRC file.</p></div>
+      <a href="support/">Setup and troubleshooting <span aria-hidden="true">↗</span></a>
+    </section>
   </main>
   <footer class="site-footer wrap">
     <p>Lilt <span>by Sahil Ambegaonkar</span></p>

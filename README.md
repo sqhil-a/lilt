@@ -12,4 +12,4 @@ In the GitHub repository, choose **Settings → Pages → Deploy from a branch**
 | Support URL | https://sqhil-a.github.io/lilt/support/ |
 | Privacy Policy URL | https://sqhil-a.github.io/lilt/privacy/ |
 
-Review the policy when the app’s data practices change. Add a link to the published privacy policy inside the macOS app before submitting for review. The interactive preview uses original cover art and an instrumental arrangement of the traditional Scottish song “Auld Lang Syne.” The words are attributed to Robert Burns. [Library of Congress song history](https://blogs.loc.gov/music/2018/12/auld-lang-syne-sharing-a-cup-of-kindness-with-old-friends/).
+Review the policy when the app’s data practices change. Add a link to the published privacy policy inside the macOS app before submitting for review.
